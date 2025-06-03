@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discover - Rithiga Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Container */
+    .discover-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #2c3e50;
+    }
+
+    /* Grid layout */
+    .discover-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* Each card */
+    .discover-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .discover-card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* Image */
+    .discover-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Text content */
+    .discover-card-content {
+      padding: 15px 20px;
+    }
+
+    .discover-card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      color: #34495e;
+    }
+
+    .discover-card-content p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* Button */
+    .discover-card-content a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 15px;
+      background-color: #2a9df4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .discover-card-content a:hover {
+      background-color: #2383d6;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .discover-card img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h4>Rithiga Travels</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="special-deals.html">Special Deals</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-container">
+    <h1>Discover Amazing Places</h1>
+    <div class="discover-grid">
+      <div class="discover-card">
+        <img src="img/chennai image.jpg" alt="Chennai" />
+        <div class="discover-card-content">
+          <h3>Chennai, India</h3>
+          <p>Explore the vibrant culture, temples, and beaches of Chennai.</p>
+          <a href="read-now-chennai.html">Read Now</a>
+        </div>
+      </div>
+
+      <div class="discover-card">
+        <img src="img/newyork image.jpg" alt="New York" />
+        <div class="discover-card-content">
+          <h3>New York, USA</h3>
+          <p>The city that never sleeps awaits you with endless excitement.</p>
+          <a href="read-now-newyork.html">Read Now</a>
+        </div>
+      </div>
+
+      <div class="discover-card">
+        <img src="img/russia city image.avif" alt="Saint Petersburg" />
+        <div class="discover-card-content">
+          <h3>Saint Petersburg, Russia</h3>
+          <p>Discover grand architecture, museums, and rich history.</p>
+          <a href="read-now-russia.html">Read Now</a>
+        </div>
+      </div>
+
+      <div class="discover-card">
+        <img src="img/barcelona spain image.jpg" alt="Barcelona" />
+        <div class="discover-card-content">
+          <h3>Barcelona, Spain</h3>
+          <p>Experience the beauty of Gaudí's masterpieces and Mediterranean vibes.</p>
+          <a href="read-now-barcelona.html">Read Now</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
