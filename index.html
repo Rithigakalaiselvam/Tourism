@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h4>Rithiga Travels</h4>
+        <ul>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="special-deals.html">Special Deals</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+
+        <i class="bi bi-three-dots"></i>
+      </nav>
+      <div class="content">
+        <div class="cont_bx">
+          <h1>The right destination for you and your family</h1>
+          <p>
+            Life is a collection of moments, make yours unforgettable moments in
+            your favourite destination
+          </p>
+          <button>Start your search</button>
+        </div>
+        <div class="trip_bx">
+          <div class="search_bx">
+            <div class="card">
+              <h4>Location <i class="bi bi-caret-down-fill"></i></h4>
+              <input type="text" placeholder="Enter your destination" />
+            </div>
+            <div class="card">
+              <h4>Date <i class="bi bi-caret-down-fill"></i></h4>
+              <input type="date" />
+            </div>
+            <div class="card">
+              <h4>People <i class="bi bi-caret-down-fill"></i></h4>
+              <input type="number" placeholder="How many people?" />
+            </div>
+            <input type="button" value="Explore Now" />
+          </div>
+          <div class="travel_bx">
+            <h4>Countries to travel</h4>
+            <div class="cards">
+              <div class="card">
+                <h3>INDIA <img src="img/India flag.webp" alt="" /></h3>
+                <img src="img/chennai image.jpg" alt="" />
+                <div class="btn_city">
+                  <a href="#" class="read-now"
+   data-title="CHENNAI"
+   data-img="img/chennai image.jpg"
+   data-description="A cultural capital with beaches and temples.">Read Now</a>
+
+                  <h5>CHENNAI<br /><span>$450</span></h5>
+                </div>
+              </div>
+              <div class="card">
+                <h3>UNITED STATES <img src="img/us flag.jpg" alt="" /></h3>
+                <img src="img/newyork image.jpg" alt="" />
+                <div class="btn_city">
+                  <a href="">Read Now</a>
+                  <h5>NEW YORK<br /><span>$990</span></h5>
+                </div>
+              </div>
+              <div class="card">
+                <h3>RUSSIA <img src="img/russia flag.jpeg" alt="" /></h3>
+                <img src="img/russia city image.avif" alt="" />
+                <div class="btn_city">
+                  <a href="">Read Now</a>
+                  <h5>SAN PETERSBURG<br /><span>$600</span></h5>
+                </div>
+              </div>
+              <div class="card">
+                <h3>SPAIN <img src="img/spain flag.jpeg" alt="" /></h3>
+                <img src="img/barcelona spain image.jpg" alt="" />
+                <div class="btn_city">
+                  <a href="">Read Now</a>
+                  <h5>BARCELONA<br /><span>$750</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="offers">
+      <h1>Best tour package offers for you</h1>
+      <p>Choose your next destination</p>
+      <div class="cards">
+        <!-- Offer Cards -->
+        <!-- Reused formatting from previous cards for consistency -->
+        <!-- Make sure all image paths exist -->
+      </div>
+    </div>
+
+    <div class="destination">
+      <div class="des_bx">
+        <h4>Our Destination</h4>
+        <p>Choose your next Destination</p>
+        <ul>
+          <li>INDIA</li>
+          <li>DUBAI</li>
+          <li>RUSSIA</li>
+          <li>VIETNAM</li>
+          <li>USA</li>
+          <li>EGYPT</li>
+        </ul>
+        <h6>
+          Included: Air Tickets, Hotel, Breakfast, Tours, Airport transfer
+        </h6>
+        <button>MORE INFO</button>
+      </div>
+      <div class="img_bx">
+        <img src="img/airplane image.jpg" alt="" />
+        <div class="msg">
+          <img src="img/India flag.webp" alt="" />
+          <div class="cont">
+            <h4>INDIA</h4>
+            <div class="icon">
+              <i class="bi bi-heart-fill"><span>87231</span></i>
+              <i class="bi bi-chat-fill"><span>5234</span></i>
+            </div>
+          </div>
+        </div>
+        <div class="msg">
+          <img src="img/us flag.jpg" alt="" />
+          <div class="cont">
+            <h4>United States</h4>
+            <div class="icon">
+              <i class="bi bi-heart-fill"><span>87231</span></i>
+              <i class="bi bi-chat-fill"><span>5234</span></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="readNowModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="" />
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+    <footer>
+      <h2>Subscribe &<br />get special discount</h2>
+      <p>
+        Subscribe and save! Get access to the best prices and exclusive demands
+        on hotels, tours and more. Your dream vacation is closer than you think!
+      </p>
+      <div class="input">
+        <input type="text" placeholder="Enter your Email Address" />
+        <button>Subscribe</button>
+      </div>
+      <ul>
+        <li>
+          1565<br /><h6>Years serving the travel Industry</h6>
+        </li>
+        <li>
+          8435<br /><h6>Global<br />Partnership</h6>
+        </li>
+        <li>
+          1246<br /><h6>Industry Awards Since 2022</h6>
+        </li>
+        <li>
+          9876<br /><h6>Subscribers</h6>
+        </li>
+      </ul>
+    </footer>
+    <!-- Modal -->
+<div id="readNowModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="">
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
